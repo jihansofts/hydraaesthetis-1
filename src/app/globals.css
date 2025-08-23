@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --background: #2e2e2e;
+    --primary: #252525;
+    --secondary: #3a3a3a;
+    --font-inter: "Inter", sans-serif;
+
+    /* Define gradient colors directly (no CSS vars) */
+    --gradient-from: #CAB587;
+    --gradient-via: #D3C29A;
+    --gradient-to: #8D7146;
+    --gradient-direction: to right;
+  }
+}
+
+@theme {
+  --color-bgColor: var(--background);
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --font-inter: var(--font-inter);
+
+  /* Register gradient colors in theme */
+  --color-gradient-from: var(--gradient-from);
+  --color-gradient-via: var(--gradient-via);
+  --color-gradient-to: var(--gradient-to);
+}
+
+@layer utilities {
+  /* Gradient Background */
+  .bg-gradient {
+    background: linear-gradient(
+      var(--gradient-direction),
+      var(--gradient-from),
+      var(--gradient-via),
+      var(--gradient-to)
+    );
+  }
+
+  /* Gradient Text */
+  .text-gradient {
+    background: linear-gradient(
+      var(--gradient-direction),
+      var(--gradient-from),
+      var(--gradient-via),
+      var(--gradient-to)
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  /* Gradient Border (with rounded corners) */
+  .gradient-border {
+    position: relative;
+    border-radius: 0.5rem; /* Adjust as needed */
+    z-index: 1;
+  }
+  .gradient-border::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    padding: 2px; /* Border width */
+    border-radius: inherit;
+    background: linear-gradient(
+      var(--gradient-direction),
+      var(--gradient-from),
+      var(--gradient-via),
+      var(--gradient-to)
+    );
+    -webkit-mask: linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    z-index: -1;
+  }
+}
+
+body {
+  background-color: var(--color-bgColor);
+  color: var(--color-primary);
+  font-family: var(--font-inter);
+}
