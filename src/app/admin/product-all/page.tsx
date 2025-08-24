@@ -72,7 +72,7 @@ export default function Page() {
         const res = await fetch(`/api/product/${id}`, {
           method: "DELETE",
         });
-        console.log("res", res);
+
         if (!res.ok) {
           throw new Error("Failed to delete moderator");
         }
@@ -80,7 +80,7 @@ export default function Page() {
         // ✅ Remove from UI immediately
         setVitamins((prev) => prev.filter((item) => item._id !== id));
 
-        Swal.fire("Deleted!", "Moderator has been deleted.", "success");
+        Swal.fire("Deleted!", "Product has been deleted.", "success");
       } catch (error) {
         Swal.fire("Something went wrong" + error);
       }

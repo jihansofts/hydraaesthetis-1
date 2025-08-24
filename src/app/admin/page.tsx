@@ -18,13 +18,21 @@ export default function Page() {
     e.preventDefault();
 
     if (!name || !price || !image) {
-      alert("Please fill in all required fields");
+      Swal.fire({
+        icon: "error",
+        title: "Error",
+        text: "Name, price, and image are required",
+      });
       return;
     }
 
     // Drop product description validation
-    if (description.length > 110) {
-      alert("Description must be 110 characters or less for products.");
+    if (description.length > 130) {
+      Swal.fire({
+        icon: "error",
+        title: "Error",
+        text: "Description must be less than 130 characters",
+      });
       return;
     }
 
