@@ -1,6 +1,6 @@
 import mongoose, { Document, Schema, Model } from "mongoose";
 
-export type ProductCategory = "vitamin" | "drop";
+export type ProductCategory = "vitamin" | "drop" | "our";
 
 export interface IProduct extends Document {
   name: string;

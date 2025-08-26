@@ -115,6 +115,7 @@ export default function Page() {
                 <option value="">Select category</option>
                 <option value="drop">IV Drips</option>
                 <option value="vitamin">Vitamins</option>
+                <option value="our">Our Products</option>
               </select>
             </div>
 

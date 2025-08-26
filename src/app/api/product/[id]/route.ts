@@ -11,15 +11,7 @@ export const config = {
   },
 };
 
-// type Context = { params?: Record<string, string> | undefined };
 
-// function getPublicIdFromUrl(url: string) {
-//   const parts = url.split("/");
-//   const filename = parts[parts.length - 1]; // abc123.png
-//   const publicIdWithExtension = `products/${filename}`;
-//   const publicId = publicIdWithExtension.replace(/\.[^/.]+$/, ""); // remove extension
-//   return publicId;
-// }
 
 type Params = { id: string };
 

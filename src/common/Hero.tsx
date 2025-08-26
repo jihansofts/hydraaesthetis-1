@@ -57,11 +57,11 @@ export default function Hero({ title, description }: HeroProps) {
                   target="_blank"
                   href="https://www.google.com/maps/place/1030+S+Glendale+Ave+%23404,+Glendale,+CA+91205,+USA/@34.1337858,-118.2541787,17z/data=!3m1!4b1!4m6!3m5!1s0x80c2c11decaf89d3:0xd5de74f5cd7ea657!8m2!3d34.1337814!4d-118.2516038!16s%2Fg%2F11ll6tf078?entry=ttu&g_ep=EgoyMDI1MDgxOS4wIKXMDSoASAFQAw%3D%3D"
                   className="bg-gradient-to-r font-inter font-bold from-[#C4AC7B] via-[#EEE1BA] to-[#836539] bg-clip-text text-transparent">
-                  1030 S. Glendale Ave Unit <br /> 404 Glendale CA 91205
+                  1030 S. Glendale Ave Unit 404 <br /> Glendale CA 91205
                 </Link>
-                <p className="bg-gradient-to-r font-inter font-medium mt-2 text-[12px] from-[#C4AC7B] via-[#EEE1BA] to-[#836539] bg-clip-text text-transparent">
+                {/* <p className="bg-gradient-to-r font-inter font-medium mt-2 text-[12px] from-[#C4AC7B] via-[#EEE1BA] to-[#836539] bg-clip-text text-transparent">
                   ( Consultations only )
-                </p>
+                </p> */}
               </div>
             </li>
           </ul>
