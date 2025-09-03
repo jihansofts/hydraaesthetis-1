@@ -16,9 +16,9 @@ const WhyChooseUs = ({ serviceRef }: WhyChooseUsProps) => {
     { id: "vitamins", title: "Vitamins Injections" },
     // { id: "fillers", title: "Fillers & Muscle Relaxers" },
     { id: "microneedling", title: "Microneedling & PRP" },
-
     { id: "botox", title: "Botox & Fillers" },
     { id: "aesthetics-home", title: "Hydra Aesthetics At Home" },
+    { id: "ourproduct", title: "Our Products" },
   ];
 
   return (

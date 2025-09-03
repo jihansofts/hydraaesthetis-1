@@ -39,9 +39,9 @@ const PreptideCard: React.FC<PreptideCardProps> = ({
         <Image
           src={image}
           alt={title || "Product"}
-          width={100}
-          height={100}
-          className="w-16 h-16 object-cover rounded"
+          width={150}
+          height={150}
+          className="w-20 h-24 object-cover rounded"
         />
         <span className="text-[#CAB485] text-xl font-bold">${price}</span>
       </div>
@@ -63,12 +63,12 @@ const PreptideCard: React.FC<PreptideCardProps> = ({
 
       {/* Buttons */}
       <div className="flex gap-3 w-full mt-4">
-        <a
+        {/* <a
           target="_blank"
           href="https://www.myaestheticspro.com/BN/index.cfm?A78B66E7FFE2188433572F72D74E0F5F"
           className="bg-gradient w-full text-[#1E1E1E] font-bold text-sm py-3 px-4 rounded-md hover:opacity-90">
           Consultation
-        </a>
+        </a> */}
         <button
           onClick={handleAddToCart}
           className=" w-full gradient-border cursor-pointer  text-[#BAA57B] text-sm py-3 px-4 rounded-md hover:bg-[#CAB485] hover:text-black transition">

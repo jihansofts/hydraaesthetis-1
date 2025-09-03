@@ -32,6 +32,7 @@ export default function OurService({ serviceRef }: WhyChooseUsProps) {
 
     { id: "botox", title: "Botox & Fillers" },
     { id: "aesthetics-home", title: "Hydra Aesthetics At Home" },
+    { id: "ourproduct", title: "Our Products" },
   ];
   return (
     <section className="bg-[#2E2E2E] text-white py-16 px-4 text-center">

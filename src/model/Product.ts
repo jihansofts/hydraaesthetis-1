@@ -17,7 +17,7 @@ const productSchema = new Schema<IProduct>(
     name: { type: String, required: true },
     category: {
       type: String,
-      enum: ["vitamin", "drop"],
+      enum: ["vitamin", "drop", "our"],
       required: true,
     },
     image: { type: String }, // optional

@@ -14,6 +14,7 @@ import VitaminsSection from "@/components/home/VitaminsSection";
 import Microneedling from "@/components/home/Microneedling";
 import OurService from "@/components/home/OurService";
 import ItemCard from "@/common/ItemCard";
+import OurProductSection from "@/components/home/OurProductSection";
 
 export default function Home() {
   return (
@@ -21,7 +22,7 @@ export default function Home() {
       <HeroSection />
       <OurService />
       <DripsSection />
-      <ItemCard/>
+      <ItemCard />
       <Hormone />
       <ExclusiveSection />
       <NicotinamideSection />
@@ -29,6 +30,7 @@ export default function Home() {
       <BotoxSection />
       <Microneedling />
       <Magic />
+      <OurProductSection />
       <HydraAest />
       <WhyChooseUs />
     </main>
